@@ -1,0 +1,164 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+        }
+
+        .image {
+            position: absolute;
+            width: 100px; /* Adjust the width and height according to your images */
+            height: 100px;
+            transition: opacity 0.5s ease;
+        }
+
+        .image:hover {
+            opacity: 0.8;
+        }
+
+        .top-right {
+            top: 0;
+            right: 0;
+        }
+
+        .middle {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+
+        .text {
+            display: none;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+
+        .image:hover + .text {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="./assets/images/card1.png" alt="Image 1" class="image top-right">
+    <div class="text">Text for Image 1</div>
+
+    <img src="i./assets/images/card1.png" alt="Image 2" class="image middle">
+    <div class="text">Text for Image 2</div>
+
+    <img src="image3.jpg" alt="Image 3" class="image bottom-left">
+    <div class="text">Text for Image 3</div>
+</div>
+
+</body>
+</html --> 
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="./assets/images/astronutshello.png" type="image/x-icon">
+    <link rel="icon" href="./assets/images/astronutshello.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Urbanist:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Playfair+Display:wght@700&family=Urbanist:ital@1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="import" href="home.html">
+    <link rel="import" href="details.html">
+    <link rel="import" href="property.html">
+    <link rel="import" href="about.html">
+    <script src="script.js"></script>
+    <title>Astronaut</title>
+
+     </head>
+
+     <style>
+        @keyframes slideInFromBottom {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .astro-slide-up {
+            animation: slideInFromBottom 1.5s ease-out;
+        }
+    </style>
+        <style>
+        @keyframes slideInFromTop{
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .astro-slide-down {
+            animation: slideInFromTop 1.5s ease-out;
+        }
+    </style>
+<body>  
+  <div class="property">
+      <a href="details.html">
+        <img src="./assets/images/back.png" class="top-left-image">
+        </a>
+        <div class="card card-right astro-slide-down  " >
+        <div class="card-hover-text">
+        <div class="card-name">Jack</div>
+        <div class="card-sub-name">Main Astronaut</div>
+        <div class="card-content">Lorem ipsum dolor sit amet consectetur.<br> Tristique quis dictumst tellus aliquam <br>ullamcorper augue arcu mattis.</div>
+    </div>
+    </div>
+
+    <div class="card card-center astro-slide-up">
+        <div class="card-hover-text">
+        <div class="card-name" >Jack</div>
+        <div class="card-sub-name" >Main Astronaut</div>
+        <div class="card-content">Lorem ipsum dolor sit amet consectetur.<br> Tristique quis dictumst tellus aliquam <br>ullamcorper augue arcu mattis.</div>
+       </div>
+    </div>
+
+
+    <a href="about.html" style=" text-decoration: none; color: #ffffff;">
+    <div class="card card-left astro-slide-down ">
+   <div class="card-hover-text">
+        <div class="card-name">Jack</div>
+        <div class="card-sub-name" >Main Astronaut</div>
+        <div class="card-content">Lorem ipsum dolor sit amet consectetur. <br> Tristique quis dictumst tellus aliquam <br>ullamcorper augue arcu mattis.</div>
+    </div>
+    </a>
+  </div>
+
+    </body>
+</html>

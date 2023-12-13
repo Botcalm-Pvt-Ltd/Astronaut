@@ -1,0 +1,399 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+    background: none;
+}
+section {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+.home {
+    background-image: url('./assets/images/Home.png'); /* Replace 'home.jpg' with your actual image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     
+}
+
+.details {
+    background-image: url('./assets/images/Details2.png'); /* Replace 'details.jpg' with your actual image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+        text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+
+}
+
+.property {
+    background-image: url('./assets/images/Propertys.png'); /* Replace 'property.jpg' with your actual image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.about {
+    background-image: url('./assets/images/About.png'); /* Replace 'about.jpg' with your actual image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+        text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.details-section{
+    color: #fff;
+   align-self: flex-end;
+    padding: 1em;
+    width: 50%;
+    height: 100%;
+}
+.btn-style:hover {
+    transition: all .5s ease;
+    color: #fff;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+}
+
+
+.card {
+
+
+    min-height: 550px;
+    background-repeat: no-repeat;
+    overflow: hidden
+
+}
+
+.card-name,
+.card-sub-name,
+.card-content {
+    margin: 0;
+    position: relative;
+    padding: 10px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease
+   
+}
+
+
+
+.card-right {
+  position: relative;
+  overflow: hidden; /* Ensure the child elements don't overflow */
+  color: #fff
+}
+
+.card-right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   background-image: url('./assets/images/card1.png'); 
+    filter: blur(0); /* Initial blur value */
+    z-index: 1;
+    transition: filter 0.3s ease; /* Add a transition for a smooth effect */
+}
+.card-right:hover::before {
+    filter: blur(5px); /* Adjust the blur amount as needed */
+}
+.card-left {
+  position: relative;
+  overflow: hidden; /* Ensure the child elements don't overflow */
+   color: #fff
+}
+.card-left::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./assets/images/card3.png'); 
+    filter: blur(0); /* Initial blur value */
+    z-index: 1;
+    transition: filter 0.3s ease; /* Add a transition for a smooth effect */
+}
+.card-left:hover::before {
+    filter: blur(5px); /* Adjust the blur amount as needed */
+}
+.card-center {
+    position: relative;
+    overflow: hidden; /* Ensure the child elements don't overflow */
+    color: #fff
+}
+
+.card-center::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./assets/images/card2.png');
+    filter: blur(0); /* Initial blur value */
+    z-index: 1;
+    transition: filter 0.3s ease; /* Add a transition for a smooth effect */
+}
+
+.card-center:hover::before {
+    filter: blur(5px); /* Adjust the blur amount as needed */
+}
+.card-hover-text{
+padding:50px;
+
+}
+.card:hover .card-name,
+.card:hover .card-sub-name,
+.card:hover .card-content {
+    opacity: 1; /* Show the text elements on hover */
+    font-size: 1.125rem;
+    text-align: left;
+    
+}
+@media screen and (max-width: 768px) {
+    .property{
+        flex-direction: column;
+        height: auto;
+    }
+    .card{
+        width: 100%; /* Adjust the width for smaller screens */
+        text-align: center;
+        justify-content: center;
+        
+    }
+    .card-right {
+       margin-top: 75px;
+    }
+ 
+.card-name,
+.card-sub-name,
+.card-content {
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+
+}
+ 
+}
+
+.about-section{
+    color: #fff;
+    display: flex;
+    flex-direction: row; /* Use row instead of column */
+     flex-basis: 100%;
+    flex: 2;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+   background: linear-gradient(to right, #000000, #000000 40%, transparent)
+    
+}
+.column {
+    flex: 1; /* Equal width for both columns */
+}
+.about-topic{
+    font-size: 5.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.about-content{
+    font-size: 1.125rem;
+    margin-top: 10px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+  
+}
+.column img {
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    .about-section {
+
+        width: 100%; /* Adjust the width for smaller screens */
+        flex-direction: column;
+        background: linear-gradient(to bottom, #000000, #000000 40%, transparent);
+        color: #ffffff;
+    }
+    .about-topic {
+        margin-top: 100px;
+        font-size: 3rem; /* Adjust font size for smaller screens */
+    }
+
+    .about-content{
+    margin-top: 50px;
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+        
+    }
+}
+.details-section {
+    color: #fff;
+    display: flex;
+    flex-direction: row; /* Use row instead of column */
+    align-items: center;
+    justify-content:center;
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #000000, #000000 30%, transparent);
+    padding: 100px;
+}
+
+.column-details {
+    flex: 1; /* Equal width for both columns */
+}
+
+.details-topic {
+    font-size: 4.5rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center; 
+  
+}
+
+.details-content {
+    font-size: 1.125rem;
+     margin-top: 40px;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.column-details img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .details-section {
+        flex-direction: column; /* Switch back to column layout for smaller screens */
+        width: 100%;
+        background: linear-gradient(to top, #000000, #000000 40%, transparent);
+        color: #ffffff;
+    }
+
+    .details-topic {
+        font-size: 3rem;
+    }
+
+    .details-content {
+        margin-top: 10px;
+        font-size: 0.9rem;
+         padding-left: 50px;
+    padding-right: 50px;
+    }
+}
+
+.home-section{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    gap: 30px;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #000000, #000000 50%, transparent)
+}
+
+.home-topic{
+width: 90%;
+}
+.home-topic{
+   font-family: 'Playfair Display', serif;
+   font-size: 4.5rem
+}
+
+.home-content{
+    font-size: 1.125rem;
+    font-family: 'DM Sans', sans-serif;
+    text-align: left;
+    padding: 30px;
+
+   
+  
+}
+@media screen and (max-width: 768px) {
+    .home-section {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 80%; 
+         background: linear-gradient(to right, #000000, #000000 20%, transparent)
+
+    }
+   
+   .home-topic {
+        font-size: 3rem; 
+    }
+    .home-content{
+        font-size: 0.9rem; 
+        text-align: left;
+    }
+  
+}
+
+.content-bg{
+    width: 50%;
+}
+
+
+
+.top-left-image {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 1; /* Add a higher z-index */
+
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="./assets/images/astronutshello.png" type="image/x-icon">
+    <link rel="icon" href="./assets/images/astronutshello.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Urbanist:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Playfair+Display:wght@700&family=Urbanist:ital@1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="import" href="home.html">
+    <link rel="import" href="details.html">
+    <link rel="import" href="property.html">
+    <link rel="import" href="about.html">
+    <script src="script.js"></script>
+    <title>Astronaut</title>
+
+<style>
+        @keyframes slideInFromBottom {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .astro-slide-up {
+            animation: slideInFromBottom 2s ease-out;
+        }
+    </style>
+    <style>
+  @keyframes slideright {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .slideright-anim{
+    animation: slideright 2s ease-out;
+  }
+</style>
+<body>
+  <div class="about">
+    <div class="about-section">
+        <div class="column">
+             <a href="property.html">
+                    <img src="./assets/images/back.png" class="top-left-image">
+                </a>
+                <div class="slideright-anim">
+            <div class="about-topic">NEEL The Man</div>
+            <div class="about-content">Lorem ipsum dolor sit amet consectetur. Tristique quis dictumst tellus aliquam ullamcorper augue arcu mattis.
+               Lorem ipsum dolor sit amet consectetur. Tristique quis dictumst tellus aliquam ullamcorper augue arcu mattis.
+               Lorem ipsum dolor sit amet consectetur. Tristique quis dictumst tellus aliquam ullamcorper augue arcu mattis.
+               Lorem ipsum dolor sit amet consectetur. Tristique quis dictumst tellus aliquam ullamcorper augue arcu mattis.
+            </div>
+            </div>
+        </div>
+        <div class="column">
+            <img src="./assets/images/astronutshello.png" class="astro-slide-up">
+        </div>
+    </div>
+  </div>
+</body>
+</html>
